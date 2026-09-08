@@ -1,0 +1,716 @@
+[
+ {
+  "tag": "B5000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 5000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 35,
+   "n_censored": 250,
+   "drt_days": {
+    "p50": 56,
+    "p95": 66,
+    "max": 68,
+    "mean": 53.45263157894737
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 3.5,
+   "median_days_to_unreferenced": 24,
+   "median_days_to_physical": 33,
+   "deadline_met_fraction": 0.014035087719298246,
+   "bytes_rewritten": 308349,
+   "subject_bytes_erased": 158711,
+   "deletion_amplification": 1.9428331999672361
+  },
+  "utilisation": 0.616698
+ },
+ {
+  "tag": "B5000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 5000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 263,
+   "n_censored": 22,
+   "drt_days": {
+    "p50": 41,
+    "p95": 47,
+    "max": 48,
+    "mean": 37.96140350877193
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 21,
+   "median_days_to_unreferenced": 40,
+   "median_days_to_physical": 40,
+   "deadline_met_fraction": 0.22807017543859648,
+   "bytes_rewritten": 2399813,
+   "subject_bytes_erased": 469067,
+   "deletion_amplification": 5.116141190917289
+  },
+  "utilisation": 4.799626
+ },
+ {
+  "tag": "B10000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 10000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 36,
+   "n_censored": 249,
+   "drt_days": {
+    "p50": 56,
+    "p95": 66,
+    "max": 68,
+    "mean": 53.31228070175439
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 4,
+   "median_days_to_unreferenced": 24.0,
+   "median_days_to_physical": 33.0,
+   "deadline_met_fraction": 0.014035087719298246,
+   "bytes_rewritten": 347938,
+   "subject_bytes_erased": 162239,
+   "deletion_amplification": 2.1446014829973064
+  },
+  "utilisation": 0.347938
+ },
+ {
+  "tag": "B10000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 10000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 265,
+   "n_censored": 20,
+   "drt_days": {
+    "p50": 40,
+    "p95": 46,
+    "max": 46,
+    "mean": 36.09122807017544
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 20,
+   "median_days_to_unreferenced": 39,
+   "median_days_to_physical": 39,
+   "deadline_met_fraction": 0.2982456140350877,
+   "bytes_rewritten": 2602937,
+   "subject_bytes_erased": 492309,
+   "deletion_amplification": 5.287201737120386
+  },
+  "utilisation": 2.602937
+ },
+ {
+  "tag": "B20000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 20000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 36,
+   "n_censored": 249,
+   "drt_days": {
+    "p50": 56,
+    "p95": 66,
+    "max": 68,
+    "mean": 53.31228070175439
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 4.0,
+   "median_days_to_unreferenced": 24.0,
+   "median_days_to_physical": 33.0,
+   "deadline_met_fraction": 0.014035087719298246,
+   "bytes_rewritten": 366697,
+   "subject_bytes_erased": 170667,
+   "deletion_amplification": 2.148611037869067
+  },
+  "utilisation": 0.1833485
+ },
+ {
+  "tag": "B20000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 20000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 274,
+   "n_censored": 11,
+   "drt_days": {
+    "p50": 33,
+    "p95": 44,
+    "max": 45,
+    "mean": 32.214035087719296
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 13,
+   "median_days_to_unreferenced": 32.5,
+   "median_days_to_physical": 32.5,
+   "deadline_met_fraction": 0.43859649122807015,
+   "bytes_rewritten": 2942678,
+   "subject_bytes_erased": 481365,
+   "deletion_amplification": 6.113194769042203
+  },
+  "utilisation": 1.471339
+ },
+ {
+  "tag": "B40000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 40000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 41,
+   "n_censored": 244,
+   "drt_days": {
+    "p50": 56,
+    "p95": 66,
+    "max": 66,
+    "mean": 52.76842105263158
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 5.0,
+   "median_days_to_unreferenced": 25,
+   "median_days_to_physical": 33,
+   "deadline_met_fraction": 0.021052631578947368,
+   "bytes_rewritten": 556221,
+   "subject_bytes_erased": 209487,
+   "deletion_amplification": 2.655157599278237
+  },
+  "utilisation": 0.13905525
+ },
+ {
+  "tag": "B40000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 40000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 280,
+   "n_censored": 5,
+   "drt_days": {
+    "p50": 25,
+    "p95": 41,
+    "max": 45,
+    "mean": 27.83859649122807
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 5,
+   "median_days_to_unreferenced": 25.0,
+   "median_days_to_physical": 25.0,
+   "deadline_met_fraction": 0.656140350877193,
+   "bytes_rewritten": 3995379,
+   "subject_bytes_erased": 658273,
+   "deletion_amplification": 6.069486368117787
+  },
+  "utilisation": 0.99884475
+ },
+ {
+  "tag": "B80000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 80000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 138,
+   "n_censored": 147,
+   "drt_days": {
+    "p50": 45,
+    "p95": 56,
+    "max": 56,
+    "mean": 41.575438596491225
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 3,
+   "median_days_to_unreferenced": 24.0,
+   "median_days_to_physical": 32.0,
+   "deadline_met_fraction": 0.20701754385964913,
+   "bytes_rewritten": 917854,
+   "subject_bytes_erased": 304334,
+   "deletion_amplification": 3.0159430099824536
+  },
+  "utilisation": 0.11473175
+ },
+ {
+  "tag": "B80000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 80000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 285,
+   "n_censored": 0,
+   "drt_days": {
+    "p50": 20,
+    "p95": 34,
+    "max": 40,
+    "mean": 22.28421052631579
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 0,
+   "median_days_to_unreferenced": 20,
+   "median_days_to_physical": 20,
+   "deadline_met_fraction": 0.9263157894736842,
+   "bytes_rewritten": 5873283,
+   "subject_bytes_erased": 962423,
+   "deletion_amplification": 6.102600415825473
+  },
+  "utilisation": 0.734160375
+ },
+ {
+  "tag": "B160000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 160000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 285,
+   "n_censored": 0,
+   "drt_days": {
+    "p50": 34,
+    "p95": 39,
+    "max": 40,
+    "mean": 32.99649122807018
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 4,
+   "median_days_to_unreferenced": 25,
+   "median_days_to_physical": 34,
+   "deadline_met_fraction": 0.24561403508771928,
+   "bytes_rewritten": 1590326,
+   "subject_bytes_erased": 488457,
+   "deletion_amplification": 3.2558157626976376
+  },
+  "utilisation": 0.099395375
+ },
+ {
+  "tag": "B160000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 160000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 285,
+   "n_censored": 0,
+   "drt_days": {
+    "p50": 20,
+    "p95": 20,
+    "max": 20,
+    "mean": 20.0
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 0,
+   "median_days_to_unreferenced": 20,
+   "median_days_to_physical": 20,
+   "deadline_met_fraction": 1.0,
+   "bytes_rewritten": 4953290,
+   "subject_bytes_erased": 937583,
+   "deletion_amplification": 5.283041608049634
+  },
+  "utilisation": 0.309580625
+ },
+ {
+  "tag": "B2000000-baseline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "baseline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 2000000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 285,
+   "n_censored": 0,
+   "drt_days": {
+    "p50": 34,
+    "p95": 39,
+    "max": 40,
+    "mean": 32.99649122807018
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 4,
+   "median_days_to_unreferenced": 25,
+   "median_days_to_physical": 34,
+   "deadline_met_fraction": 0.24561403508771928,
+   "bytes_rewritten": 1631316,
+   "subject_bytes_erased": 505225,
+   "deletion_amplification": 3.2288900984709783
+  },
+  "utilisation": 0.00815658
+ },
+ {
+  "tag": "B2000000-deadline",
+  "config": {
+   "name": "BUD",
+   "seed": 20260823,
+   "horizon_days": 100,
+   "warmup_days": 10,
+   "tail_days": 45,
+   "rows_per_day": 900,
+   "n_subjects": 1500,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "dsar_rate_per_day": 2.0,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "deadline_days": 30,
+   "delete_mode": "mor",
+   "policy": "deadline",
+   "retention_days": 20,
+   "compact_interval_days": 7,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "dirty_threshold": 0.05,
+   "daily_rewrite_budget_bytes": 2000000
+  },
+  "summary": {
+   "cohort": {
+    "warmup": 10,
+    "tail": 45
+   },
+   "n_obligations": 285,
+   "n_closed": 285,
+   "n_censored": 0,
+   "drt_days": {
+    "p50": 20,
+    "p95": 20,
+    "max": 20,
+    "mean": 20.0
+   },
+   "median_days_to_logical": 0,
+   "median_days_to_rewritten": 0,
+   "median_days_to_unreferenced": 20,
+   "median_days_to_physical": 20,
+   "deadline_met_fraction": 1.0,
+   "bytes_rewritten": 4704922,
+   "subject_bytes_erased": 924025,
+   "deletion_amplification": 5.09176916208977
+  },
+  "utilisation": 0.02352461
+ }
+]

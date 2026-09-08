@@ -1,0 +1,7 @@
+# Pinned to what the reported results were produced with.
+pyiceberg[sql-sqlite,pyarrow]==0.11.1
+pyarrow==25.0.1
+matplotlib==3.10.9
+# objstore/ spike only (S3-compatible endpoint with bucket versioning):
+moto[server]>=5.2
+boto3>=1.34
