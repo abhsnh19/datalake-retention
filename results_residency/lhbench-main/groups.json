@@ -1,0 +1,482 @@
+[
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "bucketed",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 34.625,
+  "p50_min": 33.166666666666664,
+  "p50_max": 36.791666666666664,
+  "p95_mean": 38.791666666666664,
+  "met_mean": 0.19135165037801957,
+  "miss_rate_mean": 0.8086483496219804,
+  "median_completed_mean": 34.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 3.6111111111111107,
+   "unreferenced": 24.652777777777782,
+   "delete_marker": 34.625,
+   "physical": 34.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 3.338863790030119,
+   "unlink": 30.57440838404327,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 7317946.666666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.86392410920681,
+  "budget_utilisation_mean": 0.03658973333333334,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "clustered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 34.625,
+  "p50_min": 33.166666666666664,
+  "p50_max": 36.791666666666664,
+  "p95_mean": 38.791666666666664,
+  "met_mean": 0.19135165037801957,
+  "miss_rate_mean": 0.8086483496219804,
+  "median_completed_mean": 34.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 3.6111111111111107,
+   "unreferenced": 24.652777777777782,
+   "delete_marker": 34.625,
+   "physical": 34.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 3.338863790030119,
+   "unlink": 30.57440838404327,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 15768728.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 12.988762925829633,
+  "budget_utilisation_mean": 0.07884364333333334,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 34.625,
+  "p50_min": 33.166666666666664,
+  "p50_max": 36.791666666666664,
+  "p95_mean": 38.791666666666664,
+  "met_mean": 0.19135165037801957,
+  "miss_rate_mean": 0.8086483496219804,
+  "median_completed_mean": 34.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 3.6111111111111107,
+   "unreferenced": 24.652777777777782,
+   "delete_marker": 34.625,
+   "physical": 34.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 3.338863790030119,
+   "unlink": 30.57440838404327,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 15957738.333333334,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.007080095776567,
+  "budget_utilisation_mean": 0.07978869166666666,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "bucketed",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 33.875,
+  "p50_min": 32.083333333333336,
+  "p50_max": 36.666666666666664,
+  "p95_mean": 38.125,
+  "met_mean": 0.3146966623640051,
+  "miss_rate_mean": 0.6853033376359948,
+  "median_completed_mean": 33.875,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 23.833333333333332,
+   "delete_marker": 33.84722222222222,
+   "physical": 33.84722222222222
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 32.063096994283605,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 8149319.666666667,
+  "amplification_mean": 8.392094273367656,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "clustered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 33.875,
+  "p50_min": 32.083333333333336,
+  "p50_max": 36.666666666666664,
+  "p95_mean": 38.125,
+  "met_mean": 0.3146966623640051,
+  "miss_rate_mean": 0.6853033376359948,
+  "median_completed_mean": 33.875,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 23.833333333333332,
+   "delete_marker": 33.84722222222222,
+   "physical": 33.84722222222222
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 32.063096994283605,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 37594337.333333336,
+  "amplification_mean": 15.47314012618675,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 33.875,
+  "p50_min": 32.083333333333336,
+  "p50_max": 36.666666666666664,
+  "p95_mean": 38.125,
+  "met_mean": 0.3146966623640051,
+  "miss_rate_mean": 0.6853033376359948,
+  "median_completed_mean": 33.875,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 23.833333333333332,
+   "delete_marker": 33.84722222222222,
+   "physical": 33.84722222222222
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 32.063096994283605,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 38136703.333333336,
+  "amplification_mean": 15.478950106899143,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 239,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "bucketed",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5416666666666666,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.085353535353534,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 8149319.666666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 10.277844673528099,
+  "budget_utilisation_mean": 0.040746598333333335,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "clustered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5416666666666666,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.085353535353534,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 37506417.666666664,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 23.466199721446298,
+  "budget_utilisation_mean": 0.18753208833333335,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5416666666666666,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.085353535353534,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 38037871.333333336,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 23.486908275006027,
+  "budget_utilisation_mean": 0.19018935666666667,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "bucketed",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 20.1270202020202,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 8149319.666666667,
+  "amplification_mean": 10.277844673528099,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "clustered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 20.1270202020202,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 37594337.333333336,
+  "amplification_mean": 23.391443655503263,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline-cow",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 480,
+  "n_censored": 0,
+  "p50_mean": 20.625,
+  "p50_min": 20.583333333333332,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.625,
+  "to_stage_mean": {
+   "logical": 0.5,
+   "rewritten": 0.5,
+   "unreferenced": 20.583333333333332,
+   "delete_marker": 20.625,
+   "physical": 20.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5118292458049051,
+   "rewrite": 0.0,
+   "unlink": 20.1270202020202,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 38136703.333333336,
+  "amplification_mean": 23.40378489193429,
+  "budget_utilisation_mean": 0.0,
+  "probe_checks": 259,
+  "probe_disagreements": 0
+ }
+]

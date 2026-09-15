@@ -1,0 +1,722 @@
+[
+ {
+  "policy": "A-default",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 31.61111111111111,
+  "p50_min": 27.041666666666668,
+  "p50_max": 35.375,
+  "p95_mean": 47.77777777777778,
+  "met_mean": 0.4937311011136514,
+  "miss_rate_mean": 0.5062688988863485,
+  "median_completed_mean": 31.61111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 31.465277777777775
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 10.833333333333334
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.657140599106401,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 28.611111111111114,
+  "p50_min": 24.041666666666668,
+  "p50_max": 32.375,
+  "p95_mean": 44.77777777777778,
+  "met_mean": 0.5436993006272072,
+  "miss_rate_mean": 0.45630069937279294,
+  "median_completed_mean": 28.611111111111114,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 28.465277777777782
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.657140599106401,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 20.777777777777775,
+  "p50_min": 16.208333333333332,
+  "p50_max": 24.541666666666668,
+  "p95_mean": 36.94444444444445,
+  "met_mean": 0.7058050558808299,
+  "miss_rate_mean": 0.2941949441191702,
+  "median_completed_mean": 20.777777777777775,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 20.631944444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.795285423636263,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 19.847222222222225,
+  "p50_min": 19.416666666666668,
+  "p50_max": 20.291666666666668,
+  "p95_mean": 22.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 19.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 19.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 10.833333333333334
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 19.562082501235576,
+  "budget_utilisation_mean": null,
+  "probe_checks": 480,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 16.847222222222225,
+  "p50_min": 16.416666666666668,
+  "p50_max": 17.291666666666668,
+  "p95_mean": 19.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 16.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 19.562082501235576,
+  "budget_utilisation_mean": null,
+  "probe_checks": 480,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 9.01388888888889,
+  "p50_min": 8.583333333333334,
+  "p50_max": 9.458333333333334,
+  "p95_mean": 11.236111111111112,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 9.01388888888889,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 9.01388888888889
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 32.10526016066785,
+  "budget_utilisation_mean": null,
+  "probe_checks": 495,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 16.444444444444443,
+  "p50_min": 16.416666666666668,
+  "p50_max": 16.458333333333332,
+  "p95_mean": 16.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 16.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 10.833333333333334
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 20.794953708476243,
+  "budget_utilisation_mean": null,
+  "probe_checks": 481,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 13.444444444444445,
+  "p50_min": 13.416666666666666,
+  "p50_max": 13.458333333333334,
+  "p95_mean": 13.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 13.444444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 13.444444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 24.77899196614486,
+  "budget_utilisation_mean": null,
+  "probe_checks": 488,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 5.611111111111111,
+  "p50_min": 5.583333333333333,
+  "p50_max": 5.625,
+  "p95_mean": 6.041666666666667,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 5.611111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 5.611111111111111
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 70.05364632969618,
+  "budget_utilisation_mean": null,
+  "probe_checks": 507,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 16.444444444444443,
+  "p50_min": 16.416666666666668,
+  "p50_max": 16.458333333333332,
+  "p95_mean": 16.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 16.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 10.833333333333334
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 21.35138089951572,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 481,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 13.444444444444445,
+  "p50_min": 13.416666666666666,
+  "p50_max": 13.458333333333334,
+  "p95_mean": 13.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 13.444444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 13.444444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 25.004841796629364,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 485,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 5.611111111111111,
+  "p50_min": 5.583333333333333,
+  "p50_max": 5.625,
+  "p95_mean": 6.041666666666667,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 5.611111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 5.611111111111111
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 62.79604647502881,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 507,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 45.05555555555555,
+  "p50_min": 43.458333333333336,
+  "p50_max": 47.166666666666664,
+  "p95_mean": 50.09722222222222,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 45.05555555555555,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 3.534722222222222,
+   "unreferenced": 24.576388888888886,
+   "delete_marker": 34.25694444444445,
+   "physical": 45.04861111111111
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 3.196530872245313,
+   "unlink": 30.19820104212018,
+   "expire": 10.791666666666666
+  },
+  "bytes_policy_mean": 31818141.666666668,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.45326680357221,
+  "budget_utilisation_mean": 0.09943169270833334,
+  "probe_checks": 413,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 42.05555555555555,
+  "p50_min": 40.458333333333336,
+  "p50_max": 44.166666666666664,
+  "p95_mean": 47.09722222222222,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 42.05555555555555,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 3.534722222222222,
+   "unreferenced": 24.576388888888886,
+   "delete_marker": 34.25694444444445,
+   "physical": 42.04861111111111
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 3.196530872245313,
+   "unlink": 30.19820104212018,
+   "expire": 7.791666666666667
+  },
+  "bytes_policy_mean": 31807575.666666668,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 11.532374882129789,
+  "budget_utilisation_mean": 0.09939867395833334,
+  "probe_checks": 425,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 34.263888888888886,
+  "p50_min": 32.666666666666664,
+  "p50_max": 36.375,
+  "p95_mean": 39.30555555555555,
+  "met_mean": 0.20414524495494402,
+  "miss_rate_mean": 0.795854755045056,
+  "median_completed_mean": 34.263888888888886,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 3.534722222222222,
+   "unreferenced": 24.576388888888886,
+   "delete_marker": 34.25694444444445,
+   "physical": 34.25694444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 3.196530872245313,
+   "unlink": 30.19820104212018,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 31824850.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 11.51825822214576,
+  "budget_utilisation_mean": 0.09945265625,
+  "probe_checks": 426,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 31.444444444444443,
+  "p50_min": 31.416666666666668,
+  "p50_max": 31.458333333333332,
+  "p95_mean": 31.875,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 31.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 20.61111111111111,
+   "delete_marker": 20.65277777777778,
+   "physical": 31.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.083333333333332,
+   "expire": 10.791666666666666
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 10.760165461054664,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 444,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 28.444444444444443,
+  "p50_min": 28.416666666666668,
+  "p50_max": 28.458333333333332,
+  "p95_mean": 28.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 28.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 20.61111111111111,
+   "delete_marker": 20.65277777777778,
+   "physical": 28.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.083333333333332,
+   "expire": 7.791666666666667
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 11.595820745844762,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 451,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-deadline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 20.65277777777778,
+  "p50_min": 20.625,
+  "p50_max": 20.666666666666668,
+  "p95_mean": 21.083333333333332,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.65277777777778,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 20.61111111111111,
+   "delete_marker": 20.65277777777778,
+   "physical": 20.65277777777778
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 20.08647199574619,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 90974909.33333333,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 16.368386246385832,
+  "budget_utilisation_mean": 0.28429659166666665,
+  "probe_checks": 459,
+  "probe_disagreements": 0
+ }
+]
