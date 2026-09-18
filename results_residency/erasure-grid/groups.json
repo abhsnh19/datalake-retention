@@ -1,0 +1,962 @@
+[
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 35.61111111111111,
+  "p50_min": 31.041666666666668,
+  "p50_max": 39.375,
+  "p95_mean": 51.77777777777778,
+  "met_mean": 0.37520767462313254,
+  "miss_rate_mean": 0.6247923253768675,
+  "median_completed_mean": 35.61111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 35.46527777777778
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.555004713258078,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 42.61111111111111,
+  "p50_min": 38.041666666666664,
+  "p50_max": 46.375,
+  "p95_mean": 58.77777777777778,
+  "met_mean": 0.02761229893726105,
+  "miss_rate_mean": 0.9723877010627389,
+  "median_completed_mean": 42.61111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 42.46527777777778
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.448521255689475,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 51.61111111111111,
+  "p50_min": 47.041666666666664,
+  "p50_max": 55.375,
+  "p95_mean": 67.77777777777777,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 51.61111111111111,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 51.46527777777777
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.353768847373636,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 28.611111111111114,
+  "p50_min": 24.041666666666668,
+  "p50_max": 32.375,
+  "p95_mean": 44.77777777777778,
+  "met_mean": 0.5436993006272072,
+  "miss_rate_mean": 0.45630069937279294,
+  "median_completed_mean": 28.611111111111114,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.444444444444445,
+   "unreferenced": 20.631944444444443,
+   "delete_marker": 20.631944444444443,
+   "physical": 28.465277777777782
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 13.230853638855914,
+   "unlink": 7.90351828567622,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 12597175.666666666,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 7.657140599106401,
+  "budget_utilisation_mean": null,
+  "probe_checks": 424,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "B-compactor-only",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 23.847222222222225,
+  "p50_min": 23.416666666666668,
+  "p50_max": 24.291666666666668,
+  "p95_mean": 26.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 23.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 23.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 7.994673368956222,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 12.965542246570886,
+  "budget_utilisation_mean": null,
+  "probe_checks": 454,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "B-compactor-only",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 30.847222222222225,
+  "p50_min": 30.416666666666668,
+  "p50_max": 31.291666666666668,
+  "p95_mean": 33.06944444444445,
+  "met_mean": 0.40493746168675804,
+  "miss_rate_mean": 0.595062538313242,
+  "median_completed_mean": 30.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 30.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 7.994673368956222,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 10.546019010404885,
+  "budget_utilisation_mean": null,
+  "probe_checks": 444,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "B-compactor-only",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 39.84722222222222,
+  "p50_min": 39.416666666666664,
+  "p50_max": 40.291666666666664,
+  "p95_mean": 42.06944444444445,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 39.84722222222222,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 39.84722222222222
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 7.994673368956222,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.843363104540394,
+  "budget_utilisation_mean": null,
+  "probe_checks": 429,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "B-compactor-only",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 16.847222222222225,
+  "p50_min": 16.416666666666668,
+  "p50_max": 17.291666666666668,
+  "p95_mean": 19.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 16.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 7.994673368956222,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 19.562082501235576,
+  "budget_utilisation_mean": null,
+  "probe_checks": 480,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "C-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 26.902777777777782,
+  "p50_min": 26.791666666666668,
+  "p50_max": 27.0,
+  "p95_mean": 27.777777777777782,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 26.902777777777782,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 7.027777777777779,
+   "unreferenced": 12.069444444444445,
+   "delete_marker": 12.069444444444445,
+   "physical": 26.902777777777782
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 5.902433074250568,
+   "unlink": 5.041666666666667,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 29628780.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 10.638824231080244,
+  "budget_utilisation_mean": null,
+  "probe_checks": 452,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "C-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 27.444444444444443,
+  "p50_min": 27.416666666666668,
+  "p50_max": 27.458333333333332,
+  "p95_mean": 27.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 27.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 27.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 11.765400472007352,
+  "budget_utilisation_mean": null,
+  "probe_checks": 451,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "C-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 36.44444444444445,
+  "p50_min": 36.416666666666664,
+  "p50_max": 36.458333333333336,
+  "p95_mean": 36.875,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 36.44444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 36.44444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 9.509993129984165,
+  "budget_utilisation_mean": null,
+  "probe_checks": 441,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "C-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 26.527777777777775,
+  "p50_min": 26.333333333333332,
+  "p50_max": 26.625,
+  "p95_mean": 27.73611111111111,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 26.527777777777775,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 13.645833333333334,
+   "unreferenced": 18.6875,
+   "delete_marker": 18.6875,
+   "physical": 26.520833333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 11.835437389521067,
+   "unlink": 5.041666666666667,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 18355916.666666668,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 9.135102273057432,
+  "budget_utilisation_mean": null,
+  "probe_checks": 452,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 23.847222222222225,
+  "p50_min": 23.416666666666668,
+  "p50_max": 24.291666666666668,
+  "p95_mean": 26.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 23.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 23.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 12.965542246570886,
+  "budget_utilisation_mean": null,
+  "probe_checks": 454,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 30.847222222222225,
+  "p50_min": 30.416666666666668,
+  "p50_max": 31.291666666666668,
+  "p95_mean": 33.06944444444445,
+  "met_mean": 0.40493746168675804,
+  "miss_rate_mean": 0.595062538313242,
+  "median_completed_mean": 30.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 30.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 10.546019010404885,
+  "budget_utilisation_mean": null,
+  "probe_checks": 444,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 39.84722222222222,
+  "p50_min": 39.416666666666664,
+  "p50_max": 40.291666666666664,
+  "p95_mean": 42.06944444444445,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 39.84722222222222,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 39.84722222222222
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 8.843363104540394,
+  "budget_utilisation_mean": null,
+  "probe_checks": 429,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "D-cow-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 16.847222222222225,
+  "p50_min": 16.416666666666668,
+  "p50_max": 17.291666666666668,
+  "p95_mean": 19.069444444444443,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.847222222222225,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 9.01388888888889,
+   "delete_marker": 9.01388888888889,
+   "physical": 16.847222222222225
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 8.03634003562289,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 19.562082501235576,
+  "budget_utilisation_mean": null,
+  "probe_checks": 480,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 20.444444444444443,
+  "p50_min": 20.416666666666668,
+  "p50_max": 20.458333333333332,
+  "p95_mean": 20.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 20.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 16.35600330815544,
+  "budget_utilisation_mean": null,
+  "probe_checks": 468,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 27.444444444444443,
+  "p50_min": 27.416666666666668,
+  "p50_max": 27.458333333333332,
+  "p95_mean": 27.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 27.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 27.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 11.765400472007352,
+  "budget_utilisation_mean": null,
+  "probe_checks": 451,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 36.44444444444445,
+  "p50_min": 36.416666666666664,
+  "p50_max": 36.458333333333336,
+  "p95_mean": 36.875,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 36.44444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 36.44444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 9.509993129984165,
+  "budget_utilisation_mean": null,
+  "probe_checks": 441,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "E-asap-daily",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 13.444444444444445,
+  "p50_min": 13.416666666666666,
+  "p50_max": 13.458333333333334,
+  "p95_mean": 13.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 13.444444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5694444444444445,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 13.444444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 95014731.66666667,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 24.77899196614486,
+  "budget_utilisation_mean": null,
+  "probe_checks": 488,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "F-cow-daily-expiry",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 14",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 20.444444444444443,
+  "p50_min": 20.416666666666668,
+  "p50_max": 20.458333333333332,
+  "p95_mean": 20.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 20.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 20.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 5.083333333333333,
+   "expire": 14.833333333333334
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 16.35600330815544,
+  "budget_utilisation_mean": null,
+  "probe_checks": 468,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "F-cow-daily-expiry",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 21",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 27.444444444444443,
+  "p50_min": 27.416666666666668,
+  "p50_max": 27.458333333333332,
+  "p95_mean": 27.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 27.444444444444443,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 27.444444444444443
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 5.083333333333333,
+   "expire": 21.833333333333332
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 11.765400472007352,
+  "budget_utilisation_mean": null,
+  "probe_checks": 451,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "F-cow-daily-expiry",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 30",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 36.44444444444445,
+  "p50_min": 36.416666666666664,
+  "p50_max": 36.458333333333336,
+  "p95_mean": 36.875,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 36.44444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 36.44444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 5.083333333333333,
+   "expire": 30.833333333333332
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 9.509993129984165,
+  "budget_utilisation_mean": null,
+  "probe_checks": 441,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "F-cow-daily-expiry",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823,
+   20260904,
+   20260905
+  ],
+  "runs": 3,
+  "bounded": true,
+  "n_obligations": 723,
+  "n_censored": 0,
+  "p50_mean": 13.444444444444445,
+  "p50_min": 13.416666666666666,
+  "p50_max": 13.458333333333334,
+  "p95_mean": 13.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 13.444444444444445,
+  "to_stage_mean": {
+   "logical": 0.5277777777777778,
+   "rewritten": 0.5277777777777778,
+   "unreferenced": 5.611111111111111,
+   "delete_marker": 5.611111111111111,
+   "physical": 13.444444444444445
+  },
+  "stage_mean_days": {
+   "commit": 0.5202656067561892,
+   "rewrite": 0.0,
+   "unlink": 5.083333333333333,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 0.0,
+  "bytes_cow_mean": 95014731.66666667,
+  "amplification_mean": 24.77899196614486,
+  "budget_utilisation_mean": null,
+  "probe_checks": 488,
+  "probe_disagreements": 0
+ }
+]

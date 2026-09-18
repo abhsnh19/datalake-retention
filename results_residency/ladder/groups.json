@@ -1,0 +1,1028 @@
+[
+ {
+  "policy": "A-default",
+  "store": "Azure \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 23.208333333333332,
+  "p50_min": 23.208333333333332,
+  "p50_max": 23.208333333333332,
+  "p95_mean": 42.5,
+  "met_mean": 0.783410138248848,
+  "miss_rate_mean": 0.21658986175115208,
+  "median_completed_mean": 23.208333333333332,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 23.208333333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.768658615697502,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "GCS \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 23.208333333333332,
+  "p50_min": 23.208333333333332,
+  "p50_max": 23.208333333333332,
+  "p95_mean": 42.5,
+  "met_mean": 0.783410138248848,
+  "miss_rate_mean": 0.21658986175115208,
+  "median_completed_mean": 23.208333333333332,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 23.208333333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.768658615697502,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "MinIO \u00b7 count-only ILM (0 d)",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 17.041666666666668,
+  "p50_min": 17.041666666666668,
+  "p50_max": 17.041666666666668,
+  "p95_mean": 36.333333333333336,
+  "met_mean": 0.8294930875576036,
+  "miss_rate_mean": 0.17050691244239632,
+  "median_completed_mean": 17.041666666666668,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 17.041666666666668
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 0.8333333333333334
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.906109559557294,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 Object Lock \u00b7 COMPLIANCE",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 3.688629129100509,
+  "budget_utilisation_mean": null,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 1",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 18.041666666666668,
+  "p50_min": 18.041666666666668,
+  "p50_max": 18.041666666666668,
+  "p95_mean": 37.333333333333336,
+  "met_mean": 0.8202764976958525,
+  "miss_rate_mean": 0.17972350230414746,
+  "median_completed_mean": 18.041666666666668,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 18.041666666666668
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 1.8333333333333333
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.906109559557294,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 24.041666666666668,
+  "p50_min": 24.041666666666668,
+  "p50_max": 24.041666666666668,
+  "p95_mean": 43.333333333333336,
+  "met_mean": 0.7695852534562212,
+  "miss_rate_mean": 0.2304147465437788,
+  "median_completed_mean": 24.041666666666668,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 24.041666666666668
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.768658615697502,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioned, no lifecycle rule",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 3.688629129100509,
+  "budget_utilisation_mean": null,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "A-default",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 16.208333333333332,
+  "p50_min": 16.208333333333332,
+  "p50_max": 16.208333333333332,
+  "p95_mean": 35.5,
+  "met_mean": 0.847926267281106,
+  "miss_rate_mean": 0.15207373271889402,
+  "median_completed_mean": 16.208333333333332,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 7.458333333333333,
+   "unreferenced": 16.208333333333332,
+   "delete_marker": 16.208333333333332,
+   "physical": 16.208333333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 9.507104454685098,
+   "unlink": 7.977150537634408,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 11610993.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 8.906109559557294,
+  "budget_utilisation_mean": null,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 16.458333333333332,
+  "p50_min": 16.458333333333332,
+  "p50_max": 16.458333333333332,
+  "p95_mean": 16.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.458333333333332,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 16.458333333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 10.833333333333334
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 22.158346149924114,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 133,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "Azure \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 12.625,
+  "p50_min": 12.625,
+  "p50_max": 12.625,
+  "p95_mean": 13.041666666666666,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 12.625,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 12.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 25.528006820115472,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 134,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "GCS \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 12.625,
+  "p50_min": 12.625,
+  "p50_max": 12.625,
+  "p95_mean": 13.041666666666666,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 12.625,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 12.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 25.528006820115472,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 134,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "MinIO \u00b7 count-only ILM (0 d)",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 6.458333333333333,
+  "p50_min": 6.458333333333333,
+  "p50_max": 6.458333333333333,
+  "p95_mean": 6.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 6.458333333333333,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 6.458333333333333
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 0.8333333333333334
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 57.61601042622993,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 139,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 Object Lock \u00b7 COMPLIANCE",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 4.488014852016685,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 1",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 7.458333333333333,
+  "p50_min": 7.458333333333333,
+  "p50_max": 7.458333333333333,
+  "p95_mean": 7.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 7.458333333333333,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 7.458333333333333
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 1.8333333333333333
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 45.2001972336917,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 138,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 13.458333333333334,
+  "p50_min": 13.458333333333334,
+  "p50_max": 13.458333333333334,
+  "p95_mean": 13.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 13.458333333333334,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 13.458333333333334
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 7.833333333333333
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 24.925211539946375,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 134,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioned, no lifecycle rule",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 4.488014852016685,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "combined-coordinated",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 5.625,
+  "p50_min": 5.625,
+  "p50_max": 5.625,
+  "p95_mean": 6.041666666666667,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 5.625,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.625,
+   "physical": 5.625
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.041666666666667,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 89743274.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 79.50276176529735,
+  "budget_utilisation_mean": 0.28044773125,
+  "probe_checks": 141,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 47.166666666666664,
+  "p50_min": 47.166666666666664,
+  "p50_max": 47.166666666666664,
+  "p95_mean": 50.458333333333336,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 47.166666666666664,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 47.166666666666664
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 10.791666666666666
+  },
+  "bytes_policy_mean": 31666597.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 9.852286010210516,
+  "budget_utilisation_mean": 0.098958115625,
+  "probe_checks": 120,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "Azure \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 43.375,
+  "p50_min": 43.375,
+  "p50_max": 43.375,
+  "p95_mean": 46.666666666666664,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 43.375,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 43.375
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 31649549.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.446921715707205,
+  "budget_utilisation_mean": 0.098904840625,
+  "probe_checks": 123,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "GCS \u00b7 soft delete 7 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 43.375,
+  "p50_min": 43.375,
+  "p50_max": 43.375,
+  "p95_mean": 46.666666666666664,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 43.375,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 43.375
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 7.0
+  },
+  "bytes_policy_mean": 31659355.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.4436740619704,
+  "budget_utilisation_mean": 0.098935484375,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "MinIO \u00b7 count-only ILM (0 d)",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 37.166666666666664,
+  "p50_min": 37.166666666666664,
+  "p50_max": 37.166666666666664,
+  "p95_mean": 40.458333333333336,
+  "met_mean": 0.1152073732718894,
+  "miss_rate_mean": 0.8847926267281107,
+  "median_completed_mean": 37.166666666666664,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 37.166666666666664
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 0.7916666666666666
+  },
+  "bytes_policy_mean": 31656972.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.444506166547752,
+  "budget_utilisation_mean": 0.0989280375,
+  "probe_checks": 123,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 Object Lock \u00b7 COMPLIANCE",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 31619321.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 4.240170592082404,
+  "budget_utilisation_mean": 0.098810378125,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 1",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 38.166666666666664,
+  "p50_min": 38.166666666666664,
+  "p50_max": 38.166666666666664,
+  "p95_mean": 41.458333333333336,
+  "met_mean": 0.0967741935483871,
+  "miss_rate_mean": 0.9032258064516129,
+  "median_completed_mean": 38.166666666666664,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 38.166666666666664
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 1.7916666666666667
+  },
+  "bytes_policy_mean": 31647116.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.457975608438856,
+  "budget_utilisation_mean": 0.0988972375,
+  "probe_checks": 123,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioned + NoncurrentDays 7",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 44.166666666666664,
+  "p50_min": 44.166666666666664,
+  "p50_max": 44.166666666666664,
+  "p95_mean": 47.458333333333336,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": 44.166666666666664,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 44.166666666666664
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 7.791666666666667
+  },
+  "bytes_policy_mean": 31640668.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.452521975744306,
+  "budget_utilisation_mean": 0.0988770875,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioned, no lifecycle rule",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": false,
+  "n_obligations": 217,
+  "n_censored": 217,
+  "p50_mean": 117.5,
+  "p50_min": 117.5,
+  "p50_max": 117.5,
+  "p95_mean": 144.70833333333334,
+  "met_mean": 0.0,
+  "miss_rate_mean": 1.0,
+  "median_completed_mean": null,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": null
+  },
+  "stage_mean_days": {
+   "commit": null,
+   "rewrite": null,
+   "unlink": null,
+   "expire": null
+  },
+  "bytes_policy_mean": 31652935.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 4.240502055682476,
+  "budget_utilisation_mean": 0.098915421875,
+  "probe_checks": 71,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "lhbench-baseline",
+  "store": "S3 \u00b7 versioning off",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 36.375,
+  "p50_min": 36.375,
+  "p50_max": 36.375,
+  "p95_mean": 39.666666666666664,
+  "met_mean": 0.1382488479262673,
+  "miss_rate_mean": 0.8617511520737328,
+  "median_completed_mean": 36.375,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 3.75,
+   "unreferenced": 24.791666666666668,
+   "delete_marker": 36.375,
+   "physical": 36.375
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 3.2812980030721963,
+   "unlink": 30.751536098310293,
+   "expire": 0.0
+  },
+  "bytes_policy_mean": 31657509.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 13.441183613542782,
+  "budget_utilisation_mean": 0.098929715625,
+  "probe_checks": 122,
+  "probe_disagreements": 0
+ },
+ {
+  "policy": "s3tables-managed",
+  "store": "AWS S3 Tables \u00b7 unreferenced 3 d + noncurrent 10 d",
+  "layout": "scattered",
+  "seeds": [
+   20260823
+  ],
+  "runs": 1,
+  "bounded": true,
+  "n_obligations": 217,
+  "n_censored": 0,
+  "p50_mean": 16.458333333333332,
+  "p50_min": 16.458333333333332,
+  "p50_max": 16.458333333333332,
+  "p95_mean": 16.875,
+  "met_mean": 1.0,
+  "miss_rate_mean": 0.0,
+  "median_completed_mean": 16.458333333333332,
+  "to_stage_mean": {
+   "logical": 0.5416666666666666,
+   "rewritten": 0.5833333333333334,
+   "unreferenced": 5.625,
+   "delete_marker": 5.666666666666667,
+   "physical": 16.458333333333332
+  },
+  "stage_mean_days": {
+   "commit": 0.5147849462365591,
+   "rewrite": 0.041666666666666664,
+   "unlink": 5.083333333333333,
+   "expire": 10.791666666666666
+  },
+  "bytes_policy_mean": 92277265.0,
+  "bytes_cow_mean": 0.0,
+  "amplification_mean": 20.828041902892583,
+  "budget_utilisation_mean": null,
+  "probe_checks": 133,
+  "probe_disagreements": 0
+ }
+]

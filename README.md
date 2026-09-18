@@ -173,3 +173,19 @@ surviving file that looked like a legitimate result.
 Research code, not a product. Iceberg only. Single engine. Synthetic workload.
 The scheduler is an experiment in what a deadline-aware maintenance policy could
 do, not a drop-in replacement for anyone's maintenance jobs.
+
+## `residency/` — the combined harness (branch `nilanjan_b`)
+
+`lhbench/` above and Nilanjan Chatterjee's `erasure_harness` (the Monster Scale
+2027 deck) measured the same thing on real PyIceberg tables and reported it
+differently: day clock vs hour clock, 20-day retention vs Iceberg's 5-day
+default, metadata-only expiry vs the Java action that deletes files, a byte
+budget vs none. `residency/` is the union: every one of those differences is a
+parameter or a preset, one ledger reports both decks' views, `verify` runs both
+harnesses' checks, and `reconcile` writes [`RECONCILIATION.md`](RECONCILIATION.md)
+from this repository's `results/` and the other deck's numbers in
+`residency_data/`. See [`residency/README.md`](residency/README.md).
+
+    pip install -r requirements-residency.txt
+    python -m pytest -q tests
+    python -m residency.cli run --suite combined

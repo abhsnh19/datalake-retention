@@ -1,0 +1,590 @@
+[
+ {
+  "config": {
+   "name": "default",
+   "seed": 20260823,
+   "horizon_days": 70,
+   "warmup_days": 3,
+   "tail_days": 45,
+   "rows_per_day": 150,
+   "n_subjects": 200,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "files_per_day": 1,
+   "ingest_hour": 1,
+   "payload_chars": 48,
+   "dsar_rate_per_day": 1.5,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "dsar_batch_hour": 2,
+   "deadline_days": 30
+  },
+  "policy": "A-default",
+  "policy_spec": {
+   "name": "A-default",
+   "delete_mode": "mor",
+   "rewrite": "weekly_window_monthly_full",
+   "compact_interval_days": 7,
+   "dirty_threshold": 0.0,
+   "daily_rewrite_budget_bytes": null,
+   "snapshot_retention_days": 5,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 30,
+   "orphan_older_than_days": 3,
+   "expiry_deletes_files": true,
+   "pull_forward": false,
+   "urgency_horizon_days": 10,
+   "margin_days": 1,
+   "weekly_window_days": 7,
+   "maintenance_hour": 3,
+   "expire_hour": 4,
+   "orphan_hour": 5
+  },
+  "store": {
+   "mode": "versioned",
+   "noncurrent_days": 7,
+   "soft_delete_days": 7,
+   "soft_delete_provider": "gcs",
+   "lock_retain_days": null,
+   "unreferenced_days": 3,
+   "label": "S3 \u00b7 versioned + NoncurrentDays 7",
+   "bounded": true,
+   "tail_days": 7
+  },
+  "seed": 20260823,
+  "summary": {
+   "n_obligations": 94,
+   "n_closed": 94,
+   "n_censored": 0,
+   "ordered": true,
+   "lhbench": {
+    "cohort": {
+     "warmup_days": 3,
+     "tail_days": 45
+    },
+    "drt_days": {
+     "p50": 18.708333333333332,
+     "p95": 33.833333333333336,
+     "max": 35.541666666666664,
+     "mean": 23.423315602836876
+    },
+    "median_days_to_logical": 0.5208333333333333,
+    "median_days_to_rewritten": 4.708333333333333,
+    "median_days_to_unreferenced": 10.854166666666668,
+    "median_days_to_delete_marker": 10.854166666666668,
+    "median_days_to_physical": 18.6875,
+    "deadline_met_fraction": 0.6808510638297872,
+    "deletion_amplification": 2.017452287118629,
+    "stage_increments_days": {
+     "rewrite": 4.708333333333333,
+     "snapshot_expiry": 6.145833333333335,
+     "unlink": 0.0,
+     "store_expiry": 7.833333333333332
+    }
+   },
+   "erasure": {
+    "requests": 94,
+    "completed": 94,
+    "censored_at_horizon": 0,
+    "days": {
+     "median": 18.708333333333332,
+     "p90": 31.916666666666668,
+     "p95": 33.833333333333336,
+     "mean": 23.423315602836876,
+     "max": 35.541666666666664,
+     "min": 15.708333333333334
+    },
+    "miss_rate": 0.3191489361702128,
+    "stage_mean_days": {
+     "commit": 0.5279255319148937,
+     "rewrite": 8.977836879432624,
+     "unlink": 6.084219858156029,
+     "expire": 7.833333333333332
+    },
+    "stage_median_days": {
+     "commit": 0.5208333333333333,
+     "rewrite": 4.541666666666667,
+     "unlink": 7.041666666666667,
+     "expire": 7.833333333333333
+    }
+   },
+   "bytes_rewritten": 364481,
+   "bytes_rewritten_cow": 0,
+   "subject_bytes_erased": 180664
+  },
+  "rewrite": {
+   "commits": 10,
+   "files": 105,
+   "bytes_policy": 364481,
+   "bytes_cow": 0,
+   "bytes": 364481,
+   "bytes_added": 183800
+  },
+  "budget": {
+   "cap_bytes": null,
+   "days_over_cap": 0,
+   "forced_days": 0,
+   "max_bytes_day": 149331,
+   "utilisation": null
+  },
+  "table": {
+   "commits": 80,
+   "data_files_written": 122,
+   "expire_runs": 10,
+   "orphan_runs": 3,
+   "snapshots_expired": 68,
+   "files_unlinked_by_expiry": 183,
+   "files_unlinked_by_orphan": 0,
+   "max_live_snapshots": 13
+  },
+  "probe": {
+   "checks": 38,
+   "rows_readable_after_delete": 25,
+   "disagreements": 0,
+   "erased_confirmed": 13
+  },
+  "wall_seconds": 2.34
+ },
+ {
+  "config": {
+   "name": "default",
+   "seed": 20260823,
+   "horizon_days": 70,
+   "warmup_days": 3,
+   "tail_days": 45,
+   "rows_per_day": 150,
+   "n_subjects": 200,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "files_per_day": 1,
+   "ingest_hour": 1,
+   "payload_chars": 48,
+   "dsar_rate_per_day": 1.5,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "dsar_batch_hour": 2,
+   "deadline_days": 30
+  },
+  "policy": "lhbench-baseline",
+  "policy_spec": {
+   "name": "lhbench-baseline",
+   "delete_mode": "mor",
+   "rewrite": "cadence_fifo",
+   "compact_interval_days": 7,
+   "dirty_threshold": 0.0,
+   "daily_rewrite_budget_bytes": 2000000,
+   "snapshot_retention_days": 20,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "orphan_older_than_days": 0,
+   "expiry_deletes_files": false,
+   "pull_forward": false,
+   "urgency_horizon_days": 10,
+   "margin_days": 1,
+   "weekly_window_days": 7,
+   "maintenance_hour": 3,
+   "expire_hour": 4,
+   "orphan_hour": 5
+  },
+  "store": {
+   "mode": "unversioned",
+   "noncurrent_days": null,
+   "soft_delete_days": 7,
+   "soft_delete_provider": "gcs",
+   "lock_retain_days": null,
+   "unreferenced_days": 3,
+   "label": "S3 \u00b7 versioning off",
+   "bounded": true,
+   "tail_days": 0
+  },
+  "seed": 20260823,
+  "summary": {
+   "n_obligations": 94,
+   "n_closed": 94,
+   "n_censored": 0,
+   "ordered": true,
+   "lhbench": {
+    "cohort": {
+     "warmup_days": 3,
+     "tail_days": 45
+    },
+    "drt_days": {
+     "p50": 30.583333333333332,
+     "p95": 37.0,
+     "max": 37.75,
+     "mean": 30.11037234042553
+    },
+    "median_days_to_logical": 0.5208333333333333,
+    "median_days_to_rewritten": 2.75,
+    "median_days_to_unreferenced": 23.791666666666664,
+    "median_days_to_delete_marker": 30.520833333333332,
+    "median_days_to_physical": 30.520833333333332,
+    "deadline_met_fraction": 0.48936170212765956,
+    "deletion_amplification": 2.2174445551377775,
+    "stage_increments_days": {
+     "rewrite": 2.75,
+     "snapshot_expiry": 21.041666666666664,
+     "unlink": 6.729166666666668,
+     "store_expiry": 0.0
+    }
+   },
+   "erasure": {
+    "requests": 94,
+    "completed": 94,
+    "censored_at_horizon": 0,
+    "days": {
+     "median": 30.583333333333332,
+     "p90": 35.875,
+     "p95": 37.0,
+     "mean": 30.11037234042553,
+     "max": 37.75,
+     "min": 23.916666666666668
+    },
+    "miss_rate": 0.5106382978723404,
+    "stage_mean_days": {
+     "commit": 0.5279255319148937,
+     "rewrite": 2.584219858156028,
+     "unlink": 26.998226950354606,
+     "expire": 0.0
+    },
+    "stage_median_days": {
+     "commit": 0.5208333333333333,
+     "rewrite": 2.0416666666666665,
+     "unlink": 24.083333333333332,
+     "expire": 0.0
+    }
+   },
+   "bytes_rewritten": 621002,
+   "bytes_rewritten_cow": 0,
+   "subject_bytes_erased": 280053
+  },
+  "rewrite": {
+   "commits": 8,
+   "files": 195,
+   "bytes_policy": 621002,
+   "bytes_cow": 0,
+   "bytes": 621002,
+   "bytes_added": 440321
+  },
+  "budget": {
+   "cap_bytes": 2000000,
+   "days_over_cap": 0,
+   "forced_days": 0,
+   "max_bytes_day": 137001,
+   "utilisation": 0.004435728571428571
+  },
+  "table": {
+   "commits": 78,
+   "data_files_written": 212,
+   "expire_runs": 10,
+   "orphan_runs": 5,
+   "snapshots_expired": 50,
+   "files_unlinked_by_expiry": 0,
+   "files_unlinked_by_orphan": 176,
+   "max_live_snapshots": 29
+  },
+  "probe": {
+   "checks": 39,
+   "rows_readable_after_delete": 25,
+   "disagreements": 0,
+   "erased_confirmed": 14
+  },
+  "wall_seconds": 2.76
+ },
+ {
+  "config": {
+   "name": "default",
+   "seed": 20260823,
+   "horizon_days": 70,
+   "warmup_days": 3,
+   "tail_days": 45,
+   "rows_per_day": 150,
+   "n_subjects": 200,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "files_per_day": 1,
+   "ingest_hour": 1,
+   "payload_chars": 48,
+   "dsar_rate_per_day": 1.5,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "dsar_batch_hour": 2,
+   "deadline_days": 30
+  },
+  "policy": "D-cow-default",
+  "policy_spec": {
+   "name": "D-cow-default",
+   "delete_mode": "cow",
+   "rewrite": "none",
+   "compact_interval_days": 7,
+   "dirty_threshold": 0.0,
+   "daily_rewrite_budget_bytes": null,
+   "snapshot_retention_days": 5,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 30,
+   "orphan_older_than_days": 3,
+   "expiry_deletes_files": true,
+   "pull_forward": false,
+   "urgency_horizon_days": 10,
+   "margin_days": 1,
+   "weekly_window_days": 7,
+   "maintenance_hour": 3,
+   "expire_hour": 4,
+   "orphan_hour": 5
+  },
+  "store": {
+   "mode": "unversioned",
+   "noncurrent_days": null,
+   "soft_delete_days": 7,
+   "soft_delete_provider": "gcs",
+   "lock_retain_days": null,
+   "unreferenced_days": 3,
+   "label": "S3 \u00b7 versioning off",
+   "bounded": true,
+   "tail_days": 0
+  },
+  "seed": 20260823,
+  "summary": {
+   "n_obligations": 94,
+   "n_closed": 94,
+   "n_censored": 0,
+   "ordered": true,
+   "lhbench": {
+    "cohort": {
+     "warmup_days": 3,
+     "tail_days": 45
+    },
+    "drt_days": {
+     "p50": 9.583333333333334,
+     "p95": 11.125,
+     "max": 12.0,
+     "mean": 9.334663120567376
+    },
+    "median_days_to_logical": 0.5208333333333333,
+    "median_days_to_rewritten": 0.5208333333333333,
+    "median_days_to_unreferenced": 9.583333333333334,
+    "median_days_to_delete_marker": 9.583333333333334,
+    "median_days_to_physical": 9.583333333333334,
+    "deadline_met_fraction": 1.0,
+    "deletion_amplification": 11.802384845717684,
+    "stage_increments_days": {
+     "rewrite": 0.5208333333333333,
+     "snapshot_expiry": 9.0625,
+     "unlink": 0.0,
+     "store_expiry": 0.0
+    }
+   },
+   "erasure": {
+    "requests": 94,
+    "completed": 94,
+    "censored_at_horizon": 0,
+    "days": {
+     "median": 9.583333333333334,
+     "p90": 10.375,
+     "p95": 11.125,
+     "mean": 9.334663120567376,
+     "max": 12.0,
+     "min": 5.666666666666667
+    },
+    "miss_rate": 0.0,
+    "stage_mean_days": {
+     "commit": 0.5279255319148937,
+     "rewrite": 0.0,
+     "unlink": 8.806737588652483,
+     "expire": 0.0
+    },
+    "stage_median_days": {
+     "commit": 0.5208333333333333,
+     "rewrite": 0.0,
+     "unlink": 9.083333333333334,
+     "expire": 0.0
+    }
+   },
+   "bytes_rewritten": 0,
+   "bytes_rewritten_cow": 1111525,
+   "subject_bytes_erased": 94178
+  },
+  "rewrite": {
+   "commits": 40,
+   "files": 340,
+   "bytes_policy": 0,
+   "bytes_cow": 1111525,
+   "bytes": 1111525,
+   "bytes_added": 970923
+  },
+  "budget": {
+   "cap_bytes": null,
+   "days_over_cap": 0,
+   "forced_days": 0,
+   "max_bytes_day": 0,
+   "utilisation": null
+  },
+  "table": {
+   "commits": 110,
+   "data_files_written": 383,
+   "expire_runs": 10,
+   "orphan_runs": 3,
+   "snapshots_expired": 99,
+   "files_unlinked_by_expiry": 588,
+   "files_unlinked_by_orphan": 4,
+   "max_live_snapshots": 25
+  },
+  "probe": {
+   "checks": 49,
+   "rows_readable_after_delete": 25,
+   "disagreements": 0,
+   "erased_confirmed": 24
+  },
+  "wall_seconds": 5.21
+ },
+ {
+  "config": {
+   "name": "default",
+   "seed": 20260823,
+   "horizon_days": 70,
+   "warmup_days": 3,
+   "tail_days": 45,
+   "rows_per_day": 150,
+   "n_subjects": 200,
+   "subject_alpha": 1.2,
+   "layout": "scattered",
+   "n_buckets": 16,
+   "files_per_day": 1,
+   "ingest_hour": 1,
+   "payload_chars": 48,
+   "dsar_rate_per_day": 1.5,
+   "dsar_burst_prob": 0.05,
+   "dsar_burst_multiplier": 20.0,
+   "dsar_batch_hour": 2,
+   "deadline_days": 30
+  },
+  "policy": "lhbench-deadline",
+  "policy_spec": {
+   "name": "lhbench-deadline",
+   "delete_mode": "mor",
+   "rewrite": "deadline_edf",
+   "compact_interval_days": 7,
+   "dirty_threshold": 0.0,
+   "daily_rewrite_budget_bytes": 2000000,
+   "snapshot_retention_days": 20,
+   "expire_interval_days": 7,
+   "orphan_interval_days": 15,
+   "orphan_older_than_days": 0,
+   "expiry_deletes_files": false,
+   "pull_forward": true,
+   "urgency_horizon_days": 10,
+   "margin_days": 1,
+   "weekly_window_days": 7,
+   "maintenance_hour": 3,
+   "expire_hour": 4,
+   "orphan_hour": 5
+  },
+  "store": {
+   "mode": "versioned",
+   "noncurrent_days": 7,
+   "soft_delete_days": 7,
+   "soft_delete_provider": "gcs",
+   "lock_retain_days": null,
+   "unreferenced_days": 3,
+   "label": "S3 \u00b7 versioned + NoncurrentDays 7",
+   "bounded": true,
+   "tail_days": 7
+  },
+  "seed": 20260823,
+  "summary": {
+   "n_obligations": 94,
+   "n_closed": 94,
+   "n_censored": 0,
+   "ordered": true,
+   "lhbench": {
+    "cohort": {
+     "warmup_days": 3,
+     "tail_days": 45
+    },
+    "drt_days": {
+     "p50": 28.458333333333332,
+     "p95": 28.875,
+     "max": 28.916666666666668,
+     "mean": 28.44459219858156
+    },
+    "median_days_to_logical": 0.5208333333333333,
+    "median_days_to_rewritten": 0.5625,
+    "median_days_to_unreferenced": 20.604166666666664,
+    "median_days_to_delete_marker": 20.645833333333336,
+    "median_days_to_physical": 28.4375,
+    "deadline_met_fraction": 1.0,
+    "deletion_amplification": 4.93748418990126,
+    "stage_increments_days": {
+     "rewrite": 0.5625,
+     "snapshot_expiry": 20.041666666666664,
+     "unlink": 0.041666666666671404,
+     "store_expiry": 7.791666666666664
+    }
+   },
+   "erasure": {
+    "requests": 94,
+    "completed": 94,
+    "censored_at_horizon": 0,
+    "days": {
+     "median": 28.458333333333332,
+     "p90": 28.833333333333332,
+     "p95": 28.875,
+     "mean": 28.44459219858156,
+     "max": 28.916666666666668,
+     "min": 27.958333333333332
+    },
+    "miss_rate": 0.0,
+    "stage_mean_days": {
+     "commit": 0.5279255319148937,
+     "rewrite": 0.041666666666666664,
+     "unlink": 20.083333333333332,
+     "expire": 7.791666666666668
+    },
+    "stage_median_days": {
+     "commit": 0.5208333333333333,
+     "rewrite": 0.041666666666666664,
+     "unlink": 20.083333333333332,
+     "expire": 7.791666666666667
+    }
+   },
+   "bytes_rewritten": 1151604,
+   "bytes_rewritten_cow": 0,
+   "subject_bytes_erased": 233237
+  },
+  "rewrite": {
+   "commits": 40,
+   "files": 366,
+   "bytes_policy": 1151604,
+   "bytes_cow": 0,
+   "bytes": 1151604,
+   "bytes_added": 970923
+  },
+  "budget": {
+   "cap_bytes": 2000000,
+   "days_over_cap": 0,
+   "forced_days": 0,
+   "max_bytes_day": 126642,
+   "utilisation": 0.008225742857142858
+  },
+  "table": {
+   "commits": 110,
+   "data_files_written": 383,
+   "expire_runs": 52,
+   "orphan_runs": 50,
+   "snapshots_expired": 86,
+   "files_unlinked_by_expiry": 0,
+   "files_unlinked_by_orphan": 649,
+   "max_live_snapshots": 39
+  },
+  "probe": {
+   "checks": 44,
+   "rows_readable_after_delete": 25,
+   "disagreements": 0,
+   "erased_confirmed": 19
+  },
+  "wall_seconds": 5.81
+ }
+]

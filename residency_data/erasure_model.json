@@ -1,0 +1,299 @@
+{
+ "operating_point": {
+  "table_tb": 2400.0,
+  "daily_ingest_tb": 18.0,
+  "annual_churn": 0.04,
+  "requests_per_month": 9800,
+  "commits_per_day": 24,
+  "deadline_days": 30,
+  "storage_usd_tb_month": 23.55,
+  "compute_usd_tb_rewritten": 18.5
+ },
+ "sources": {
+  "iceberg_snapshot_retention_d": 5,
+  "iceberg_orphan_retention_d": 3,
+  "delta_deleted_file_retention_d": 7,
+  "hudi_commits_retained": 10,
+  "gcs_soft_delete_d": 7,
+  "s3_noncurrent_d": null,
+  "azure_soft_delete_d": 7
+ },
+ "cadence": {
+  "hourly": 0.0417,
+  "daily": 1.0,
+  "weekly": 7.0,
+  "monthly": 30.0
+ },
+ "headline": {
+  "default": {
+   "s0": 0.02,
+   "s1": 9.5,
+   "s2": 8.5,
+   "s3": 7.0,
+   "total": 25.02,
+   "unbounded": false,
+   "compliant": true
+  }
+ },
+ "delete_modes": {
+  "physical_cow": {
+   "label": "Physical delete (copy-on-write)",
+   "residency": {
+    "s0": 0.02,
+    "s1": 3.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 19.02,
+    "unbounded": false,
+    "compliant": true
+   },
+   "write_amp": 13.2,
+   "read_penalty_pct": 0.0,
+   "cost": {
+    "dead_tb": 5.0,
+    "noncurrent_tb": 24.3,
+    "carry_usd": 8282.0,
+    "rewritten_tb": 1267.2,
+    "compute_usd": 23443.0,
+    "total_usd": 31725.0
+   }
+  },
+  "deletion_vector": {
+   "label": "Deletion vector (merge-on-read)",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 25.02,
+    "unbounded": false,
+    "compliant": true
+   },
+   "write_amp": 4.6,
+   "read_penalty_pct": 4.5,
+   "cost": {
+    "dead_tb": 6.58,
+    "noncurrent_tb": 8.47,
+    "carry_usd": 4253.0,
+    "rewritten_tb": 441.6,
+    "compute_usd": 8170.0,
+    "total_usd": 12423.0
+   }
+  }
+ },
+ "formats": {
+  "iceberg_v3": {
+   "label": "Iceberg v3",
+   "unlink_job": "expire_snapshots",
+   "time_governed": true,
+   "dv_container": "shared Puffin",
+   "physical_cow": {
+    "s0": 0.02,
+    "s1": 3.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 19.02,
+    "unbounded": false,
+    "compliant": true
+   },
+   "deletion_vector": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 25.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "delta": {
+   "label": "Delta Lake",
+   "unlink_job": "VACUUM",
+   "time_governed": true,
+   "dv_container": "one .bin per file",
+   "physical_cow": {
+    "s0": 0.02,
+    "s1": 3.5,
+    "s2": 10.5,
+    "s3": 7.0,
+    "total": 21.02,
+    "unbounded": false,
+    "compliant": true
+   },
+   "deletion_vector": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 10.5,
+    "s3": 7.0,
+    "total": 27.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "hudi": {
+   "label": "Apache Hudi",
+   "unlink_job": "cleaner",
+   "time_governed": false,
+   "dv_container": "n/a (file slices)",
+   "physical_cow": {
+    "s0": 0.02,
+    "s1": 3.5,
+    "s2": 3.92,
+    "s3": 7.0,
+    "total": 14.44,
+    "unbounded": false,
+    "compliant": true
+   },
+   "deletion_vector": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 3.92,
+    "s3": 7.0,
+    "total": 20.44,
+    "unbounded": false,
+    "compliant": true
+   },
+   "hourly_commits": 0.42,
+   "daily_commits": 10.0
+  }
+ },
+ "clouds": {
+  "s3_unversioned": {
+   "label": "S3 \u00b7 versioning off",
+   "expire_d": 0.0,
+   "default_state": "DELETE frees bytes immediately",
+   "risk": "good",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 0.0,
+    "total": 18.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "s3_versioned_rule": {
+   "label": "S3 \u00b7 versioned + lifecycle rule",
+   "expire_d": 7.0,
+   "default_state": "NoncurrentVersionExpiration you wrote",
+   "risk": "warn",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 25.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "s3_versioned_norule": {
+   "label": "S3 \u00b7 versioned, no rule",
+   "expire_d": null,
+   "default_state": "no default rule exists \u2014 bytes never expire",
+   "risk": "crit",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": null,
+    "total": null,
+    "unbounded": true
+   }
+  },
+  "gcs_default": {
+   "label": "GCS \u00b7 default bucket",
+   "expire_d": 7.0,
+   "default_state": "soft delete ON by default, 7 d",
+   "risk": "warn",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 25.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "azure_softdelete": {
+   "label": "Azure \u00b7 soft delete on",
+   "expire_d": 7.0,
+   "default_state": "opt-in, container scope on ADLS Gen2",
+   "risk": "warn",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": 7.0,
+    "total": 25.02,
+    "unbounded": false,
+    "compliant": true
+   }
+  },
+  "objectlock_compliance": {
+   "label": "S3 Object Lock \u00b7 COMPLIANCE",
+   "expire_d": null,
+   "default_state": "no user, including root, can delete",
+   "risk": "crit",
+   "residency": {
+    "s0": 0.02,
+    "s1": 9.5,
+    "s2": 8.5,
+    "s3": null,
+    "total": null,
+    "unbounded": true
+   }
+  }
+ },
+ "rule_value": {
+  "residency_days": 25.02,
+  "write_amp": 4.6,
+  "no_rule_first_year": {
+   "dead_tb": 6.58,
+   "noncurrent_tb": 220.8,
+   "carry_usd": 64258.0,
+   "rewritten_tb": 441.6,
+   "compute_usd": 8170.0,
+   "total_usd": 72427.0
+  },
+  "rule_7d": {
+   "dead_tb": 6.58,
+   "noncurrent_tb": 8.47,
+   "carry_usd": 4253.0,
+   "rewritten_tb": 441.6,
+   "compute_usd": 8170.0,
+   "total_usd": 12423.0
+  },
+  "usd_saved_first_year": 60004.0,
+  "pct_saved_first_year": 82.8,
+  "no_rule_year_two": {
+   "dead_tb": 6.58,
+   "noncurrent_tb": 662.4,
+   "carry_usd": 189054.0,
+   "rewritten_tb": 441.6,
+   "compute_usd": 8170.0,
+   "total_usd": 197224.0
+  }
+ },
+ "dv_garbage": {
+  "dvs_per_container": 64,
+  "garbage_pct_range": [
+   48,
+   65,
+   75
+  ],
+  "note": "whole-container reclamation leaves the dead share stranded"
+ },
+ "feasibility": {
+  "window_d": 30,
+  "commit_batch_d": 1,
+  "snapshot_retention_d": 5,
+  "expire_cadence_daily_d": 1,
+  "expire_cadence_weekly_d": 7,
+  "midnight_rounding_d": 1,
+  "max_noncurrent_d_daily_expiry": 22,
+  "max_noncurrent_d_weekly_expiry": 16
+ }
+}
